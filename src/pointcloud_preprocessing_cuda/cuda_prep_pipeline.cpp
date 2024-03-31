@@ -8,7 +8,11 @@
 #include <omp.h>
 #include <ouster/types.h>
 #include <rosfmt/rosfmt.h>
+
+
+//#define DISABLE_SWRI_PROFILER 1
 #include <swri_profiler/profiler.h>
+
 
 PCPrepCUDA::PCPrepCUDA() : nh_( "" ), pnh_( "~" ), tf_listener_( tf_buffer_ ) {
 
@@ -29,11 +33,6 @@ PCPrepCUDA::PCPrepCUDA() : nh_( "" ), pnh_( "~" ), tf_listener_( tf_buffer_ ) {
 
   if ( !pnh_.getParam( "input/lidars", lidars_ ) ) {
     ROS_ERROR( "Error: Could not get input topics" );
-    return;
-  }
-
-  if ( !pnh_.getParam( "input/metadata_topics", input_metadata_topics_ ) ) {
-    ROS_ERROR( "Error: Could not get input metadata topics" );
     return;
   }
 
@@ -115,7 +114,7 @@ void PCPrepCUDA::syncCallbackClouds( const sensor_msgs::PointCloud2ConstPtr &clo
   SWRI_PROFILE( "syncCallbackClouds" );
 
   if ( !metadata_acquired_ ) {
-    ROSFMT_ERROR( "One or many metadata is not acquired yet!\n" );
+    ROSFMT_ERROR( "[ERROR]: Metadata is not acquired yet!" );
     return;
   }
 
@@ -143,7 +142,7 @@ void PCPrepCUDA::syncCallbackClouds( const sensor_msgs::PointCloud2ConstPtr &clo
   {
     SWRI_PROFILE( "Transforms" );
 
-#pragma omp parallel for num_threads( msg_vec.size() ) shared( consecutive_transform_inv_list, lidar2base_list )
+#pragma omp parallel for num_threads( msg_vec.size() ) shared( consecutive_transform_inv_list, lidar2base_list, msg_vec, lidars_ )
     for ( int i = 0; i < msg_vec.size(); i++ ) {
 
       const auto &cur_cloud_msg = msg_vec.at( i );

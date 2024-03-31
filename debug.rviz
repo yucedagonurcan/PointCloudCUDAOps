@@ -1,0 +1,399 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 0
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /FinalOutput1/Autocompute Value Bounds1
+        - /FinalOutputAccumulated1/Autocompute Value Bounds1
+      Splitter Ratio: 0.6764705777168274
+    Tree Height: 1282
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.5886790156364441
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.4763779640197754
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: integrated_viewer/DataRateCheckerPlugin
+    Min rate: 9
+    Name: DataRateCheckerPlugin
+    Topic: -----
+  - Class: integrated_viewer/ImageViewerPlugin
+    Image topic: /det/radar/debug_img
+    Lane topic: -----
+    Name: ImageViewerPlugin
+    Point size: 3
+    Point topic: -----
+    Rect topic: -----
+Preferences:
+  PromptSaveOnExit: true
+Toolbars:
+  toolButtonStyle: 2
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.30000001192092896
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 21.384716033935547
+        Min Value: -7.950474739074707
+        Value: false
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 85; 127
+      Color Transformer: AxisColor
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: FinalOutput
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.10000000149011612
+      Style: Spheres
+      Topic: /lidar/points_preprocessed
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Class: rviz/Group
+      Displays:
+        - Alpha: 0.10000000149011612
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: 21.384716033935547
+            Min Value: -7.950474739074707
+            Value: false
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 255; 85; 127
+          Color Transformer: AxisColor
+          Decay Time: 0
+          Enabled: true
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Min Color: 0; 0; 0
+          Name: Undistorted_1
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.10000000149011612
+          Style: Spheres
+          Topic: /lidar/back_left/points_raw/undistorted
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: true
+        - Alpha: 0.10000000149011612
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: 21.384716033935547
+            Min Value: -7.950474739074707
+            Value: false
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 255; 85; 127
+          Color Transformer: AxisColor
+          Decay Time: 0
+          Enabled: true
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Min Color: 0; 0; 0
+          Name: Undistorted_2
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.10000000149011612
+          Style: Spheres
+          Topic: /lidar/back_right/points_raw/undistorted
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: true
+        - Alpha: 0.10000000149011612
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: 21.384716033935547
+            Min Value: -7.950474739074707
+            Value: false
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 255; 85; 127
+          Color Transformer: AxisColor
+          Decay Time: 0
+          Enabled: true
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Min Color: 0; 0; 0
+          Name: Undistorted_3
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.10000000149011612
+          Style: Spheres
+          Topic: /lidar/front_left/points_raw/undistorted
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: true
+        - Alpha: 0.10000000149011612
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: 21.384716033935547
+            Min Value: -7.950474739074707
+            Value: false
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 255; 85; 127
+          Color Transformer: AxisColor
+          Decay Time: 0
+          Enabled: true
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Min Color: 0; 0; 0
+          Name: Undistorted_4
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.10000000149011612
+          Style: Spheres
+          Topic: /lidar/front_right/points_raw/undistorted
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: true
+        - Alpha: 0.10000000149011612
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: 21.384716033935547
+            Min Value: -7.950474739074707
+            Value: false
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 255; 85; 127
+          Color Transformer: AxisColor
+          Decay Time: 0
+          Enabled: true
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Min Color: 0; 0; 0
+          Name: Undistorted_5
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.10000000149011612
+          Style: Spheres
+          Topic: /lidar/parent/points_raw/undistorted
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: true
+      Enabled: true
+      Name: Individuals
+    - Alpha: 0.05000000074505806
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 21.384716033935547
+        Min Value: -7.950474739074707
+        Value: false
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 85; 127
+      Color Transformer: AxisColor
+      Decay Time: 5
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: FinalOutputAccumulated
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.05000000074505806
+      Style: Spheres
+      Topic: /lidar/points_preprocessed
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 46; 52; 54
+    Default Light: true
+    Fixed Frame: map
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Theta std deviation: 0.2617993950843811
+      Topic: /initialpose
+      X std deviation: 0.5
+      Y std deviation: 0.5
+    - Class: rviz/SetGoal
+      Topic: /move_base_simple/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 91.43984985351562
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Field of View: 0.7853981852531433
+      Focal Point:
+        X: -0.766435444355011
+        Y: 1.071526288986206
+        Z: 5.161882400512695
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05000000074505806
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Pitch: 0.7197990417480469
+      Target Frame: base_link
+      Yaw: 4.153255939483643
+    Saved:
+      - Class: rviz/ThirdPersonFollower
+        Distance: 70.77922058105469
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.05999999865889549
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Field of View: 0.7853981852531433
+        Focal Point:
+          X: -2.786618709564209
+          Y: 2.9151670932769775
+          Z: 1.0455989468027838e-05
+        Focal Shape Fixed Size: true
+        Focal Shape Size: 0.05000000074505806
+        Invert Z Axis: false
+        Name: FollowCarMOBA
+        Near Clip Distance: 0.009999999776482582
+        Pitch: 0.6003997325897217
+        Target Frame: base_link
+        Yaw: 3.1853973865509033
+      - Angle: 0.009999992325901985
+        Class: rviz/TopDownOrtho
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.05999999865889549
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Invert Z Axis: false
+        Name: BEVLateral
+        Near Clip Distance: 0.009999999776482582
+        Scale: 15.735194206237793
+        Target Frame: base_link
+        X: 6.806008815765381
+        Y: 1.840736985206604
+      - Class: rviz/ThirdPersonFollower
+        Distance: 17.623416900634766
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.05999999865889549
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Field of View: 0.7853981852531433
+        Focal Point:
+          X: 0
+          Y: 0
+          Z: 0
+        Focal Shape Fixed Size: true
+        Focal Shape Size: 0.05000000074505806
+        Invert Z Axis: false
+        Name: FollowCar3rd
+        Near Clip Distance: 0.009999999776482582
+        Pitch: 0.4553983509540558
+        Target Frame: base_link
+        Yaw: 3.1553940773010254
+      - Angle: -1.5549999475479126
+        Class: rviz/TopDownOrtho
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.05999999865889549
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Invert Z Axis: false
+        Name: BEVHorizon
+        Near Clip Distance: 0.009999999776482582
+        Scale: 10.416492462158203
+        Target Frame: base_link
+        X: 6.251136779785156
+        Y: -10.742695808410645
+      - Class: rviz/Orbit
+        Distance: 38.8028450012207
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.05999999865889549
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Field of View: 0.7853981852531433
+        Focal Point:
+          X: 15.031097412109375
+          Y: 2.622495651245117
+          Z: 3.2746353149414062
+        Focal Shape Fixed Size: true
+        Focal Shape Size: 0.05000000074505806
+        Invert Z Axis: false
+        Name: Orbit
+        Near Clip Distance: 0.009999999776482582
+        Pitch: 1.1597968339920044
+        Target Frame: base_link
+        Yaw: -2.4977922439575195
+Window Geometry:
+  DataRateCheckerPlugin:
+    collapsed: false
+  Displays:
+    collapsed: false
+  Height: 1400
+  Hide Left Dock: false
+  Hide Right Dock: true
+  ImageViewerPlugin:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd0000000400000000000001d600000543fc0200000026fb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a7fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afc0000003d000003a70000000000fffffffa000000000100000001fb0000000a0049006d0061006700650000000000ffffffff0000000000000000fb0000000a0049006d006100670065010000028e000000d20000000000000000fb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb000000120049006d006100670065005f0072006100770000000000ffffffff0000000000000000fb000000120049006d00610067006500200052006100770100000421000000160000000000000000fb0000000a0049006d00610067006501000002f4000000cb0000000000000000fb0000000a0049006d006100670065010000056c0000026c0000000000000000fb00000024004400650063006900730069006f006e004d0061006b0065007200500061006e0065006c00000002110000018f0000000000000000fb000000240054007200610066006600690063004c00690067006800740050006c007500670069006e00000002ed000000f70000000000000000fb000000200052006f00730062006100670043006f006e00740072006f006c006c0065007200000001c9000001dc0000000000000000fb0000003a00530065006c0065006300740050006f0069006e00740043006c006f00750064005000750062006c0069007300680041006300740069006f006e0000000364000000410000000000000000fb0000001600430061006d0065007200610052006900670068007402000000430000025800000280000001e0fb0000001400430061006d006500720061004c00650066007402000000430000030f0000015600000129fb0000001400430061006d006500720061004c00650066007400000002360000008d0000000000000000fb0000001600430061006d006500720061005200690067006800740000000318000000cc0000000000000000fb0000001200530065006c0065006300740069006f006e000000003d000001d10000006b00fffffffb000000100044006900730070006c006100790073010000001700000543000000eb00fffffffb000000220049006d0061006700650056006900650077006500720050006c007500670069006e0000000252000001870000009200fffffffc0000034a000000980000000000fffffffa000000000100000001fb000000220049006d0061006700650056006900650077006500720050006c007500670069006e0000000000000002e40000000000000000fb000000220049006d0061006700650056006900650077006500720050006c007500670069006e01000002780000016c0000000000000000fb000000220049006d0061006700650056006900650077006500720050006c007500670069006e000000035c000000880000000000000000fb0000002a004400610074006100520061007400650043006800650063006b006500720050006c007500670069006e0000000300000000e4000000fe00fffffffb0000002a004400610074006100520061007400650043006800650063006b006500720050006c007500670069006e00000002f9000000e00000000000000000fb000000220049006d0061006700650056006900650077006500720050006c007500670069006e010000015e000002860000000000000000fb000000220049006d0061006700650056006900650077006500720050006c007500670069006e00000001740000026e0000000000000000fb0000002a004400610074006100520061007400650043006800650063006b006500720050006c007500670069006e01000002e5000000fd0000000000000000fb000000220049006d0061006700650056006900650077006500720050006c007500670069006e000000027e000001640000000000000000fb0000002a004400610074006100520061007400650043006800650063006b006500720050006c007500670069006e000000031b000000e40000000000000000fb000000220049006d0061006700650056006900650077006500720050006c007500670069006e01000002a2000001420000000000000000fb000000220049006d0061006700650056006900650077006500720050006c007500670069006e01000001bc000002370000000000000000fb0000002a004400610074006100520061007400650043006800650063006b006500720050006c007500670069006e00000002f9000000e00000000000000000fb0000000c00430061006d00650072006100000001e9000001f00000000000000000fb000000220049006d0061006700650056006900650077006500720050006c007500670069006e0100000213000001c600000000000000000000000100000100000003befc0200000005fc0000003d000003be0000000000fffffffa000000000100000008fb0000000c00430061006d0065007200610100000000ffffffff0000000000000000fb0000000c00430061006d0065007200610000000000ffffffff0000000000000000fb0000000c00430061006d0065007200610100000000ffffffff0000000000000000fb0000000c00430061006d0065007200610100000000ffffffff0000000000000000fb0000000c00430061006d0065007200610100000000ffffffff0000000000000000fb0000001800430061006d00650072006100430065006e0074006500720100000000ffffffff0000000000000000fb0000001800430061006d00650072006100430065006e0074006500720100000000ffffffff0000000000000000fb0000000a00560069006500770073000000063d000001000000010200fffffffb0000001600430061006d0065007200610043006800650063006b0100000146000002b90000000000000000fb0000001600430061006d0065007200610043006800650063006b01000001d70000020d0000000000000000fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000001200530065006c0065006300740069006f006e010000025a000000b20000000000000000000000020000073d000000a8fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000073d00000039fc0100000002fb0000000800540069006d006501000000000000073d0000000000000000fb0000000800540069006d00650100000000000004500000000000000000000008bf0000054300000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730000000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: true
+  Width: 2716
+  X: 2560
+  Y: 37
